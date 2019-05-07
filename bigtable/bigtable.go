@@ -62,18 +62,18 @@ type ClientConfig struct {
 // NewClient creates a new Client for a given project and instance.
 // The default ClientConfig will be used.
 func NewClient(ctx context.Context, project, instance string, opts ...option.ClientOption) (*Client, error) {
-	log.Println("5a: Launching bigtable.NewClient().")
+	log.Println("6a: Launching bigtable.NewClient().")
 	return NewClientWithConfig(ctx, project, instance, ClientConfig{}, opts...)
 }
 
 // NewClientWithConfig creates a new client with the given config.
 func NewClientWithConfig(ctx context.Context, project, instance string, config ClientConfig, opts ...option.ClientOption) (*Client, error) {
-	log.Println("5b: Launching bigtable.NewClientWithConfig().")
+	log.Println("6b: Launching bigtable.NewClientWithConfig().")
 	o, err := btopt.DefaultClientOptions(prodAddr, Scope, clientUserAgent)
 	if err != nil {
 		return nil, err
 	}
-	log.Println("5c: Acquired default client opts.")
+	log.Println("6c: Acquired default client opts.")
 	// Default to a small connection pool that can be overridden.
 	o = append(o,
 		option.WithGRPCConnectionPool(4),
@@ -83,15 +83,15 @@ func NewClientWithConfig(ctx context.Context, project, instance string, config C
 		// can cause RPCs to fail randomly. We can delete this after the issue is fixed.
 		option.WithGRPCDialOption(grpc.WithBlock()))
 	o = append(o, opts...)
-	log.Printf("5d: Final options. %#v", o)
-	log.Println("5e: Preparing to dial connection.")
+	log.Printf("6d: Final options. %#v", o)
+	log.Println("6e: Preparing to dial connection.")
 	conn, err := gtransport.Dial(ctx, o...)
 	if err != nil {
 		return nil, fmt.Errorf("dialing: %v", err)
 	}
-	log.Println("5f: Success dialing connection.")
+	log.Println("6f: Success dialing connection.")
 
-	log.Println("5g: Returning bigtable.Client")
+	log.Println("6g: Returning bigtable.Client")
 	return &Client{
 		conn:       conn,
 		client:     btpb.NewBigtableClient(conn),

@@ -20,6 +20,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"log"
 	"math"
 	"regexp"
 	"strings"
@@ -61,18 +62,24 @@ type AdminClient struct {
 
 // NewAdminClient creates a new AdminClient for a given project and instance.
 func NewAdminClient(ctx context.Context, project, instance string, opts ...option.ClientOption) (*AdminClient, error) {
+	log.Println("5a: Launching bigtable.NewAdminClient().")
 	o, err := btopt.DefaultClientOptions(adminAddr, AdminScope, clientUserAgent)
 	if err != nil {
 		return nil, err
 	}
+	log.Println("5b: Acquired default client opts.")
 	// Need to add scopes for long running operations (for create table & snapshots)
 	o = append(o, option.WithScopes(cloudresourcemanager.CloudPlatformScope))
 	o = append(o, opts...)
+	log.Printf("5c: Final options. %#v", o)
+	log.Println("5d: Preparing to dial connection.")
 	conn, err := gtransport.Dial(ctx, o...)
 	if err != nil {
 		return nil, fmt.Errorf("dialing: %v", err)
 	}
+	log.Println("5e: Success dialing connection.")
 
+	log.Println("5f: Creating longrunning client.")
 	lroClient, err := lroauto.NewOperationsClient(ctx, option.WithGRPCConn(conn))
 	if err != nil {
 		// This error "should not happen", since we are just reusing old connection
@@ -83,7 +90,9 @@ func NewAdminClient(ctx context.Context, project, instance string, opts ...optio
 		// TODO(pongad): investigate error conditions.
 		return nil, err
 	}
+	log.Println("5g: Success creating longrunning client.")
 
+	log.Println("5h: Returning bigtable.AdminClient")
 	return &AdminClient{
 		conn:      conn,
 		tClient:   btapb.NewBigtableTableAdminClient(conn),
