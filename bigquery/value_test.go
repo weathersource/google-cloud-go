@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/civil"
-	"cloud.google.com/go/internal/testutil"
 	"github.com/google/go-cmp/cmp"
+	"github.com/weathersource/google-cloud-go/civil"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	bq "google.golang.org/api/bigquery/v2"
 )
 

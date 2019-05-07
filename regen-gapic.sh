@@ -11,7 +11,7 @@
 # Regenerate:
 #   cd path/to/googleapis
 #   . env/bin/activate
-#   $GOPATH/src/cloud.google.com/go/regen-gapic.sh
+#   $GOPATH/src/github.com/weathersource/google-cloud-go/regen-gapic.sh
 #   deactivate
 #
 # Being in googleapis directory is important;
@@ -80,7 +80,7 @@ google/spanner/artman_spanner.yaml
 for api in "${APIS[@]}"; do
   rm -rf artman-genfiles/*
   artman --config "$api" generate go_gapic
-  cp -r artman-genfiles/gapi-*/cloud.google.com/go/* $GOPATH/src/cloud.google.com/go/
+  cp -r artman-genfiles/gapi-*/github.com/weathersource/google-cloud-go/* $GOPATH/src/github.com/weathersource/google-cloud-go/
 done
 
 microgen() {
@@ -99,14 +99,14 @@ microgen() {
 
 MICROAPIS=(
   # input proto directory  |  gapic-generator-go flag  | gapic-service-config flag
-  # "google/cloud/language/v1 --go-gapic-package cloud.google.com/go/language/apiv1;language --gapic-service-config google/cloud/language/language_v1.yaml"
+  # "google/cloud/language/v1 --go-gapic-package github.com/weathersource/google-cloud-go/language/apiv1;language --gapic-service-config google/cloud/language/language_v1.yaml"
 )
 
 for api in "${MICROAPIS[@]}"; do
   microgen $api
 done
 
-pushd $GOPATH/src/cloud.google.com/go/
+pushd $GOPATH/src/github.com/weathersource/google-cloud-go/
   gofmt -s -d -l -w . && goimports -w .
 
   # NOTE(pongad): `sed -i` doesn't work on Macs, because -i option needs an argument.
@@ -131,7 +131,7 @@ spanner/apiv1
 trace/apiv1
 )
 for dir in "${HASMANUAL[@]}"; do
-	find "$GOPATH/src/cloud.google.com/go/$dir" -name '*.go' -exec sed -i.backup -e 's/setGoogleClientInfo/SetGoogleClientInfo/g' '{}' '+'
+	find "$GOPATH/src/github.com/weathersource/google-cloud-go/$dir" -name '*.go' -exec sed -i.backup -e 's/setGoogleClientInfo/SetGoogleClientInfo/g' '{}' '+'
 done
 
-find $GOPATH/src/cloud.google.com/go/ -name '*.backup' -delete
+find $GOPATH/src/github.com/weathersource/google-cloud-go/ -name '*.backup' -delete

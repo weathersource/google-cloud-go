@@ -20,8 +20,8 @@ import (
 	"sync"
 	"testing"
 
-	"cloud.google.com/go/pubsub"
-	"cloud.google.com/go/pubsub/pstest"
+	"github.com/weathersource/google-cloud-go/pubsub"
+	"github.com/weathersource/google-cloud-go/pubsub/pstest"
 	"google.golang.org/api/option"
 	"google.golang.org/grpc"
 )

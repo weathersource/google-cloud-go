@@ -19,8 +19,8 @@ import (
 	"reflect"
 	"testing"
 
-	"cloud.google.com/go/civil"
-	"cloud.google.com/go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/civil"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 )
 
 var (

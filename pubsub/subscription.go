@@ -23,11 +23,11 @@ import (
 	"sync"
 	"time"
 
-	"cloud.google.com/go/iam"
-	"cloud.google.com/go/internal/optional"
 	"github.com/golang/protobuf/ptypes"
 	durpb "github.com/golang/protobuf/ptypes/duration"
 	gax "github.com/googleapis/gax-go/v2"
+	"github.com/weathersource/google-cloud-go/iam"
+	"github.com/weathersource/google-cloud-go/internal/optional"
 	"golang.org/x/sync/errgroup"
 	pb "google.golang.org/genproto/googleapis/pubsub/v1"
 	fmpb "google.golang.org/genproto/protobuf/field_mask"

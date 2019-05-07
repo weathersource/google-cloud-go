@@ -30,7 +30,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package webrisk // import "cloud.google.com/go/webrisk/apiv1beta1"
+package webrisk // import "github.com/weathersource/google-cloud-go/webrisk/apiv1beta1"
 
 import (
 	"context"

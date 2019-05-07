@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package pubsub // import "cloud.google.com/go/pubsub"
+package pubsub // import "github.com/weathersource/google-cloud-go/pubsub"
 
 import (
 	"context"
@@ -21,8 +21,8 @@ import (
 	"runtime"
 	"time"
 
-	"cloud.google.com/go/internal/version"
-	vkit "cloud.google.com/go/pubsub/apiv1"
+	"github.com/weathersource/google-cloud-go/internal/version"
+	vkit "github.com/weathersource/google-cloud-go/pubsub/apiv1"
 	"google.golang.org/api/option"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/keepalive"

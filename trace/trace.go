@@ -13,7 +13,7 @@
 // limitations under the License.
 
 // Package trace is OBSOLETE. See https://cloud.google.com/trace/docs/setup/go.
-package trace // import "cloud.google.com/go/trace"
+package trace // import "github.com/weathersource/google-cloud-go/trace"
 
 import (
 	"context"
@@ -732,7 +732,7 @@ func (s *Span) setStackLabel() {
 		// stack frame.  For the second form, we set the Method field to "Foo" and
 		// the Class field to "path/to/package.(Type)".
 		name := fn.Name()
-		if inTraceLibrary && !strings.HasPrefix(name, "cloud.google.com/go/trace.") {
+		if inTraceLibrary && !strings.HasPrefix(name, "github.com/weathersource/google-cloud-go/trace.") {
 			inTraceLibrary = false
 		}
 		var class string

@@ -28,8 +28,8 @@ import (
 	"strings"
 	"time"
 
-	"cloud.google.com/go/storage"
 	gax "github.com/googleapis/gax-go/v2"
+	"github.com/weathersource/google-cloud-go/storage"
 	compute "google.golang.org/api/compute/v1"
 	container "google.golang.org/api/container/v1"
 	"google.golang.org/api/googleapi"

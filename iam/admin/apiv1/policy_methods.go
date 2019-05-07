@@ -20,7 +20,7 @@ package admin
 import (
 	"context"
 
-	"cloud.google.com/go/iam"
+	"github.com/weathersource/google-cloud-go/iam"
 	iampb "google.golang.org/genproto/googleapis/iam/v1"
 )
 

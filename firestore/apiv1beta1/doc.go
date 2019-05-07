@@ -31,8 +31,8 @@
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
 //
-// Use the client at cloud.google.com/go/firestore in preference to this.
-package firestore // import "cloud.google.com/go/firestore/apiv1beta1"
+// Use the client at github.com/weathersource/google-cloud-go/firestore in preference to this.
+package firestore // import "github.com/weathersource/google-cloud-go/firestore/apiv1beta1"
 
 import (
 	"context"

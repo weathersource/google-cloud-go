@@ -173,4 +173,4 @@ These errors can be introspected for more information by type asserting to the r
 		  if e.Code == 409 { ... }
 	}
 */
-package storage // import "cloud.google.com/go/storage"
+package storage // import "github.com/weathersource/google-cloud-go/storage"

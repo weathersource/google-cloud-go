@@ -11,7 +11,7 @@ import "cloud.google.com/go"
 To install the packages on your system, *do not clone the repo*. Instead use
 
 ```
-$ go get -u cloud.google.com/go/...
+$ go get -u github.com/weathersource/google-cloud-go/...
 ```
 
 **NOTE:** Some of these packages are under development, and may occasionally
@@ -51,40 +51,40 @@ Changes have been moved to [CHANGES](https://github.com/GoogleCloudPlatform/goog
 
 Google API                                      | Status       | Package
 ------------------------------------------------|--------------|-----------------------------------------------------------
-[Asset][cloud-asset]                            | alpha        | [`cloud.google.com/go/asset/v1beta`][cloud-asset-ref]
-[BigQuery][cloud-bigquery]                      | stable       | [`cloud.google.com/go/bigquery`][cloud-bigquery-ref]
-[Bigtable][cloud-bigtable]                      | stable       | [`cloud.google.com/go/bigtable`][cloud-bigtable-ref]
-[Cloudtasks][cloud-tasks]                       | stable       | [`cloud.google.com/go/cloudtasks/apiv2`][cloud-tasks-ref]
-[Container][cloud-container]                    | stable       | [`cloud.google.com/go/container/apiv1`][cloud-container-ref]
-[ContainerAnalysis][cloud-containeranalysis]    | beta         | [`cloud.google.com/go/containeranalysis/apiv1beta1`][cloud-containeranalysis-ref]
-[Dataproc][cloud-dataproc]                      | stable       | [`cloud.google.com/go/dataproc/apiv1`][cloud-dataproc-ref]
-[Datastore][cloud-datastore]                    | stable       | [`cloud.google.com/go/datastore`][cloud-datastore-ref]
-[Debugger][cloud-debugger]                      | alpha        | [`cloud.google.com/go/debugger/apiv2`][cloud-debugger-ref]
-[Dialogflow][cloud-dialogflow]                  | alpha        | [`cloud.google.com/go/dialogflow/apiv2`][cloud-dialogflow-ref]
-[Data Loss Prevention][cloud-dlp]               | alpha        | [`cloud.google.com/go/dlp/apiv2`][cloud-dlp-ref]
-[ErrorReporting][cloud-errors]                  | alpha        | [`cloud.google.com/go/errorreporting`][cloud-errors-ref]
-[Firestore][cloud-firestore]                    | stable       | [`cloud.google.com/go/firestore`][cloud-firestore-ref]
-[IAM][cloud-iam]                                | stable       | [`cloud.google.com/go/iam`][cloud-iam-ref]
+[Asset][cloud-asset]                            | alpha        | [`github.com/weathersource/google-cloud-go/asset/v1beta`][cloud-asset-ref]
+[BigQuery][cloud-bigquery]                      | stable       | [`github.com/weathersource/google-cloud-go/bigquery`][cloud-bigquery-ref]
+[Bigtable][cloud-bigtable]                      | stable       | [`github.com/weathersource/google-cloud-go/bigtable`][cloud-bigtable-ref]
+[Cloudtasks][cloud-tasks]                       | stable       | [`github.com/weathersource/google-cloud-go/cloudtasks/apiv2`][cloud-tasks-ref]
+[Container][cloud-container]                    | stable       | [`github.com/weathersource/google-cloud-go/container/apiv1`][cloud-container-ref]
+[ContainerAnalysis][cloud-containeranalysis]    | beta         | [`github.com/weathersource/google-cloud-go/containeranalysis/apiv1beta1`][cloud-containeranalysis-ref]
+[Dataproc][cloud-dataproc]                      | stable       | [`github.com/weathersource/google-cloud-go/dataproc/apiv1`][cloud-dataproc-ref]
+[Datastore][cloud-datastore]                    | stable       | [`github.com/weathersource/google-cloud-go/datastore`][cloud-datastore-ref]
+[Debugger][cloud-debugger]                      | alpha        | [`github.com/weathersource/google-cloud-go/debugger/apiv2`][cloud-debugger-ref]
+[Dialogflow][cloud-dialogflow]                  | alpha        | [`github.com/weathersource/google-cloud-go/dialogflow/apiv2`][cloud-dialogflow-ref]
+[Data Loss Prevention][cloud-dlp]               | alpha        | [`github.com/weathersource/google-cloud-go/dlp/apiv2`][cloud-dlp-ref]
+[ErrorReporting][cloud-errors]                  | alpha        | [`github.com/weathersource/google-cloud-go/errorreporting`][cloud-errors-ref]
+[Firestore][cloud-firestore]                    | stable       | [`github.com/weathersource/google-cloud-go/firestore`][cloud-firestore-ref]
+[IAM][cloud-iam]                                | stable       | [`github.com/weathersource/google-cloud-go/iam`][cloud-iam-ref]
 [IoT][cloud-iot]                                | alpha        | [`cloud.google.com/iot/apiv1`][cloud-iot-ref]
-[KMS][cloud-kms]                                | stable       | [`cloud.google.com/go/kms`][cloud-kms-ref]
-[Natural Language][cloud-natural-language]      | stable       | [`cloud.google.com/go/language/apiv1`][cloud-natural-language-ref]
-[Logging][cloud-logging]                        | stable       | [`cloud.google.com/go/logging`][cloud-logging-ref]
-[Monitoring][cloud-monitoring]                  | alpha        | [`cloud.google.com/go/monitoring/apiv3`][cloud-monitoring-ref]
-[OS Login][cloud-oslogin]                       | alpha        | [`cloud.google.com/go/oslogin/apiv1`][cloud-oslogin-ref]
-[Pub/Sub][cloud-pubsub]                         | stable       | [`cloud.google.com/go/pubsub`][cloud-pubsub-ref]
-[Phishing Protection][cloud-phishingprotection] | alpha        | [`cloud.google.com/go/phishingprotection/apiv1betad1`][cloud-phishingprotection-ref]
-[reCAPTCHA Enterprise][cloud-recaptcha]         | alpha        | [`cloud.google.com/go/recaptchaenterprise/apiv1betad1`][cloud-recaptcha-ref]
-[Memorystore][cloud-memorystore]                | alpha        | [`cloud.google.com/go/redis/apiv1`][cloud-memorystore-ref]
-[Scheduler][cloud-scheduler]                    | stable       | [`cloud.google.com/go/scheduler/apiv1`][cloud-scheduler-ref]
-[Spanner][cloud-spanner]                        | stable       | [`cloud.google.com/go/spanner`][cloud-spanner-ref]
-[Speech][cloud-speech]                          | stable       | [`cloud.google.com/go/speech/apiv1`][cloud-speech-ref]
-[Storage][cloud-storage]                        | stable       | [`cloud.google.com/go/storage`][cloud-storage-ref]
-[Talent][cloud-talent]                          | alpha        | [`cloud.google.com/go/talent/apiv4beta1`][cloud-talent-ref]
-[Text To Speech][cloud-texttospeech]            | alpha        | [`cloud.google.com/go/texttospeech/apiv1`][cloud-texttospeech-ref]
-[Trace][cloud-trace]                            | alpha        | [`cloud.google.com/go/trace/apiv2`][cloud-trace-ref]
-[Translate][cloud-translate]                    | stable       | [`cloud.google.com/go/translate`][cloud-translate-ref]
-[Video Intelligence][cloud-video]               | alpha        | [`cloud.google.com/go/videointelligence/apiv1beta1`][cloud-video-ref]
-[Vision][cloud-vision]                          | stable       | [`cloud.google.com/go/vision/apiv1`][cloud-vision-ref]
+[KMS][cloud-kms]                                | stable       | [`github.com/weathersource/google-cloud-go/kms`][cloud-kms-ref]
+[Natural Language][cloud-natural-language]      | stable       | [`github.com/weathersource/google-cloud-go/language/apiv1`][cloud-natural-language-ref]
+[Logging][cloud-logging]                        | stable       | [`github.com/weathersource/google-cloud-go/logging`][cloud-logging-ref]
+[Monitoring][cloud-monitoring]                  | alpha        | [`github.com/weathersource/google-cloud-go/monitoring/apiv3`][cloud-monitoring-ref]
+[OS Login][cloud-oslogin]                       | alpha        | [`github.com/weathersource/google-cloud-go/oslogin/apiv1`][cloud-oslogin-ref]
+[Pub/Sub][cloud-pubsub]                         | stable       | [`github.com/weathersource/google-cloud-go/pubsub`][cloud-pubsub-ref]
+[Phishing Protection][cloud-phishingprotection] | alpha        | [`github.com/weathersource/google-cloud-go/phishingprotection/apiv1betad1`][cloud-phishingprotection-ref]
+[reCAPTCHA Enterprise][cloud-recaptcha]         | alpha        | [`github.com/weathersource/google-cloud-go/recaptchaenterprise/apiv1betad1`][cloud-recaptcha-ref]
+[Memorystore][cloud-memorystore]                | alpha        | [`github.com/weathersource/google-cloud-go/redis/apiv1`][cloud-memorystore-ref]
+[Scheduler][cloud-scheduler]                    | stable       | [`github.com/weathersource/google-cloud-go/scheduler/apiv1`][cloud-scheduler-ref]
+[Spanner][cloud-spanner]                        | stable       | [`github.com/weathersource/google-cloud-go/spanner`][cloud-spanner-ref]
+[Speech][cloud-speech]                          | stable       | [`github.com/weathersource/google-cloud-go/speech/apiv1`][cloud-speech-ref]
+[Storage][cloud-storage]                        | stable       | [`github.com/weathersource/google-cloud-go/storage`][cloud-storage-ref]
+[Talent][cloud-talent]                          | alpha        | [`github.com/weathersource/google-cloud-go/talent/apiv4beta1`][cloud-talent-ref]
+[Text To Speech][cloud-texttospeech]            | alpha        | [`github.com/weathersource/google-cloud-go/texttospeech/apiv1`][cloud-texttospeech-ref]
+[Trace][cloud-trace]                            | alpha        | [`github.com/weathersource/google-cloud-go/trace/apiv2`][cloud-trace-ref]
+[Translate][cloud-translate]                    | stable       | [`github.com/weathersource/google-cloud-go/translate`][cloud-translate-ref]
+[Video Intelligence][cloud-video]               | alpha        | [`github.com/weathersource/google-cloud-go/videointelligence/apiv1beta1`][cloud-video-ref]
+[Vision][cloud-vision]                          | stable       | [`github.com/weathersource/google-cloud-go/vision/apiv1`][cloud-vision-ref]
 
 > **Alpha status**: the API is still being actively developed. As a
 > result, it might change in backward-incompatible ways and is not recommended
@@ -142,12 +142,12 @@ tokenSource := ...
 client, err := storage.NewClient(ctx, option.WithTokenSource(tokenSource))
 ```
 
-## Cloud Datastore [![GoDoc](https://godoc.org/cloud.google.com/go/datastore?status.svg)](https://godoc.org/cloud.google.com/go/datastore)
+## Cloud Datastore [![GoDoc](https://godoc.org/github.com/weathersource/google-cloud-go/datastore?status.svg)](https://godoc.org/github.com/weathersource/google-cloud-go/datastore)
 
 - [About Cloud Datastore][cloud-datastore]
 - [Activating the API for your project][cloud-datastore-activation]
 - [API documentation][cloud-datastore-docs]
-- [Go client documentation](https://godoc.org/cloud.google.com/go/datastore)
+- [Go client documentation](https://godoc.org/github.com/weathersource/google-cloud-go/datastore)
 - [Complete sample program](https://github.com/GoogleCloudPlatform/golang-samples/tree/master/datastore/tasks)
 
 ### Example Usage
@@ -184,11 +184,11 @@ if _, err := client.PutMulti(ctx, keys, posts); err != nil {
 }
 ```
 
-## Cloud Storage [![GoDoc](https://godoc.org/cloud.google.com/go/storage?status.svg)](https://godoc.org/cloud.google.com/go/storage)
+## Cloud Storage [![GoDoc](https://godoc.org/github.com/weathersource/google-cloud-go/storage?status.svg)](https://godoc.org/github.com/weathersource/google-cloud-go/storage)
 
 - [About Cloud Storage][cloud-storage]
 - [API documentation][cloud-storage-docs]
-- [Go client documentation](https://godoc.org/cloud.google.com/go/storage)
+- [Go client documentation](https://godoc.org/github.com/weathersource/google-cloud-go/storage)
 - [Complete sample programs](https://github.com/GoogleCloudPlatform/golang-samples/tree/master/storage)
 
 ### Example Usage
@@ -217,11 +217,11 @@ if err != nil {
 }
 ```
 
-## Cloud Pub/Sub [![GoDoc](https://godoc.org/cloud.google.com/go/pubsub?status.svg)](https://godoc.org/cloud.google.com/go/pubsub)
+## Cloud Pub/Sub [![GoDoc](https://godoc.org/github.com/weathersource/google-cloud-go/pubsub?status.svg)](https://godoc.org/github.com/weathersource/google-cloud-go/pubsub)
 
 - [About Cloud Pubsub][cloud-pubsub]
 - [API documentation][cloud-pubsub-docs]
-- [Go client documentation](https://godoc.org/cloud.google.com/go/pubsub)
+- [Go client documentation](https://godoc.org/github.com/weathersource/google-cloud-go/pubsub)
 - [Complete sample programs](https://github.com/GoogleCloudPlatform/golang-samples/tree/master/pubsub)
 
 ### Example Usage
@@ -264,7 +264,7 @@ if err != nil {
 }
 ```
 
-## BigQuery [![GoDoc](https://godoc.org/cloud.google.com/go/bigquery?status.svg)](https://godoc.org/cloud.google.com/go/bigquery)
+## BigQuery [![GoDoc](https://godoc.org/github.com/weathersource/google-cloud-go/bigquery?status.svg)](https://godoc.org/github.com/weathersource/google-cloud-go/bigquery)
 
 - [About BigQuery][cloud-bigquery]
 - [API documentation][cloud-bigquery-docs]
@@ -313,7 +313,7 @@ for {
 ```
 
 
-## Stackdriver Logging [![GoDoc](https://godoc.org/cloud.google.com/go/logging?status.svg)](https://godoc.org/cloud.google.com/go/logging)
+## Stackdriver Logging [![GoDoc](https://godoc.org/github.com/weathersource/google-cloud-go/logging?status.svg)](https://godoc.org/github.com/weathersource/google-cloud-go/logging)
 
 - [About Stackdriver Logging][cloud-logging]
 - [API documentation][cloud-logging-docs]
@@ -349,11 +349,11 @@ if err != nil {
 }
 ```
 
-## Cloud Spanner [![GoDoc](https://godoc.org/cloud.google.com/go/spanner?status.svg)](https://godoc.org/cloud.google.com/go/spanner)
+## Cloud Spanner [![GoDoc](https://godoc.org/github.com/weathersource/google-cloud-go/spanner?status.svg)](https://godoc.org/github.com/weathersource/google-cloud-go/spanner)
 
 - [About Cloud Spanner][cloud-spanner]
 - [API documentation][cloud-spanner-docs]
-- [Go client documentation](https://godoc.org/cloud.google.com/go/spanner)
+- [Go client documentation](https://godoc.org/github.com/weathersource/google-cloud-go/spanner)
 
 ### Example Usage
 
@@ -398,128 +398,128 @@ See [Contributor Code of Conduct](https://github.com/GoogleCloudPlatform/google-
 for more information.
 
 [cloud-datastore]: https://cloud.google.com/datastore/
-[cloud-datastore-ref]: https://godoc.org/cloud.google.com/go/datastore
+[cloud-datastore-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/datastore
 [cloud-datastore-docs]: https://cloud.google.com/datastore/docs
 [cloud-datastore-activation]: https://cloud.google.com/datastore/docs/activate
 
 [cloud-firestore]: https://cloud.google.com/firestore/
-[cloud-firestore-ref]: https://godoc.org/cloud.google.com/go/firestore
+[cloud-firestore-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/firestore
 [cloud-firestore-docs]: https://cloud.google.com/firestore/docs
 [cloud-firestore-activation]: https://cloud.google.com/firestore/docs/activate
 
 [cloud-pubsub]: https://cloud.google.com/pubsub/
-[cloud-pubsub-ref]: https://godoc.org/cloud.google.com/go/pubsub
+[cloud-pubsub-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/pubsub
 [cloud-pubsub-docs]: https://cloud.google.com/pubsub/docs
 
 [cloud-storage]: https://cloud.google.com/storage/
-[cloud-storage-ref]: https://godoc.org/cloud.google.com/go/storage
+[cloud-storage-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/storage
 [cloud-storage-docs]: https://cloud.google.com/storage/docs
 [cloud-storage-create-bucket]: https://cloud.google.com/storage/docs/cloud-console#_creatingbuckets
 
 [cloud-bigtable]: https://cloud.google.com/bigtable/
-[cloud-bigtable-ref]: https://godoc.org/cloud.google.com/go/bigtable
+[cloud-bigtable-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/bigtable
 
 [cloud-bigquery]: https://cloud.google.com/bigquery/
 [cloud-bigquery-docs]: https://cloud.google.com/bigquery/docs
-[cloud-bigquery-ref]: https://godoc.org/cloud.google.com/go/bigquery
+[cloud-bigquery-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/bigquery
 
 [cloud-logging]: https://cloud.google.com/logging/
 [cloud-logging-docs]: https://cloud.google.com/logging/docs
-[cloud-logging-ref]: https://godoc.org/cloud.google.com/go/logging
+[cloud-logging-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/logging
 
 [cloud-monitoring]: https://cloud.google.com/monitoring/
-[cloud-monitoring-ref]: https://godoc.org/cloud.google.com/go/monitoring/apiv3
+[cloud-monitoring-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/monitoring/apiv3
 
 [cloud-vision]: https://cloud.google.com/vision
-[cloud-vision-ref]: https://godoc.org/cloud.google.com/go/vision/apiv1
+[cloud-vision-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/vision/apiv1
 
 [cloud-language]: https://cloud.google.com/natural-language
-[cloud-language-ref]: https://godoc.org/cloud.google.com/go/language/apiv1
+[cloud-language-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/language/apiv1
 
 [cloud-oslogin]: https://cloud.google.com/compute/docs/oslogin/rest
-[cloud-oslogin-ref]: https://cloud.google.com/go/oslogin/apiv1
+[cloud-oslogin-ref]: https://github.com/weathersource/google-cloud-go/oslogin/apiv1
 
 [cloud-speech]: https://cloud.google.com/speech
-[cloud-speech-ref]: https://godoc.org/cloud.google.com/go/speech/apiv1
+[cloud-speech-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/speech/apiv1
 
 [cloud-spanner]: https://cloud.google.com/spanner/
-[cloud-spanner-ref]: https://godoc.org/cloud.google.com/go/spanner
+[cloud-spanner-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/spanner
 [cloud-spanner-docs]: https://cloud.google.com/spanner/docs
 
 [cloud-translate]: https://cloud.google.com/translate
-[cloud-translate-ref]: https://godoc.org/cloud.google.com/go/translate
+[cloud-translate-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/translate
 
 [cloud-video]: https://cloud.google.com/video-intelligence/
-[cloud-video-ref]: https://godoc.org/cloud.google.com/go/videointelligence/apiv1beta1
+[cloud-video-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/videointelligence/apiv1beta1
 
 [cloud-errors]: https://cloud.google.com/error-reporting/
-[cloud-errors-ref]: https://godoc.org/cloud.google.com/go/errorreporting
+[cloud-errors-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/errorreporting
 
 [cloud-container]: https://cloud.google.com/containers/
-[cloud-container-ref]: https://godoc.org/cloud.google.com/go/container/apiv1
+[cloud-container-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/container/apiv1
 
 [cloud-debugger]: https://cloud.google.com/debugger/
-[cloud-debugger-ref]: https://godoc.org/cloud.google.com/go/debugger/apiv2
+[cloud-debugger-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/debugger/apiv2
 
 [cloud-dlp]: https://cloud.google.com/dlp/
-[cloud-dlp-ref]: https://godoc.org/cloud.google.com/go/dlp/apiv2beta1
+[cloud-dlp-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/dlp/apiv2beta1
 
 [default-creds]: https://developers.google.com/identity/protocols/application-default-credentials
 
 [cloud-dataproc]: https://cloud.google.com/dataproc/
 [cloud-dataproc-docs]: https://cloud.google.com/dataproc/docs
-[cloud-dataproc-ref]: https://godoc.org/cloud.google.com/go/dataproc/apiv1
+[cloud-dataproc-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/dataproc/apiv1
 
 [cloud-iam]: https://cloud.google.com/iam/
 [cloud-iam-docs]: https://cloud.google.com/iam/docs
-[cloud-iam-ref]: https://godoc.org/cloud.google.com/go/iam
+[cloud-iam-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/iam
 
 [cloud-kms]: https://cloud.google.com/kms/
 [cloud-kms-docs]: https://cloud.google.com/kms/docs
-[cloud-kms-ref]: https://godoc.org/cloud.google.com/go/kms/apiv1
+[cloud-kms-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/kms/apiv1
 
 [cloud-natural-language]: https://cloud.google.com/natural-language/
 [cloud-natural-language-docs]: https://cloud.google.com/natural-language/docs
-[cloud-natural-language-ref]: https://godoc.org/cloud.google.com/go/language/apiv1
+[cloud-natural-language-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/language/apiv1
 
 [cloud-memorystore]: https://cloud.google.com/memorystore/
 [cloud-memorystore-docs]: https://cloud.google.com/memorystore/docs
-[cloud-memorystore-ref]: https://godoc.org/cloud.google.com/go/redis/apiv1
+[cloud-memorystore-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/redis/apiv1
 
 [cloud-texttospeech]: https://cloud.google.com/texttospeech/
 [cloud-texttospeech-docs]: https://cloud.google.com/texttospeech/docs
-[cloud-texttospeech-ref]: https://godoc.org/cloud.google.com/go/texttospeech/apiv1
+[cloud-texttospeech-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/texttospeech/apiv1
 
 [cloud-trace]: https://cloud.google.com/trace/
 [cloud-trace-docs]: https://cloud.google.com/trace/docs
-[cloud-trace-ref]: https://godoc.org/cloud.google.com/go/trace/apiv2
+[cloud-trace-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/trace/apiv2
 
 [cloud-dialogflow]: https://cloud.google.com/dialogflow-enterprise/
 [cloud-dialogflow-docs]: https://cloud.google.com/dialogflow-enterprise/docs/
-[cloud-dialogflow-ref]: https://godoc.org/cloud.google.com/go/dialogflow/apiv2
+[cloud-dialogflow-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/dialogflow/apiv2
 
 [cloud-containeranalysis]: https://cloud.google.com/container-registry/docs/container-analysis
 [cloud-containeranalysis-docs]: https://cloud.google.com/container-analysis/api/reference/rest/
-[cloud-containeranalysis-ref]: https://godoc.org/cloud.google.com/go/devtools/containeranalysis/apiv1beta1
+[cloud-containeranalysis-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/devtools/containeranalysis/apiv1beta1
 
 [cloud-asset]: https://cloud.google.com/security-command-center/docs/how-to-asset-inventory
 [cloud-asset-docs]: https://cloud.google.com/security-command-center/docs/how-to-asset-inventory
-[cloud-asset-ref]: https://godoc.org/cloud.google.com/go/asset/apiv1
+[cloud-asset-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/asset/apiv1
 
 [cloud-tasks]: https://cloud.google.com/tasks/
-[cloud-tasks-ref]: https://godoc.org/cloud.google.com/go/cloudtasks/apiv2
+[cloud-tasks-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/cloudtasks/apiv2
 
 [cloud-scheduler]: https://cloud.google.com/scheduler
-[cloud-scheduler-ref]: https://godoc.org/cloud.google.com/go/scheduler/apiv1
+[cloud-scheduler-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/scheduler/apiv1
 
 [cloud-iot]: https://cloud.google.com/iot-core/
-[cloud-iot-ref]: https://godoc.org/cloud.google.com/go/iot/apiv1
+[cloud-iot-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/iot/apiv1
 
 [cloud-phishingprotection]: https://cloud.google.com/phishing-protection/
-[cloud-phishingprotection-ref]: https://cloud.google.com/go/phishingprotection/apiv1beta1
+[cloud-phishingprotection-ref]: https://github.com/weathersource/google-cloud-go/phishingprotection/apiv1beta1
 
 [cloud-recaptcha]: https://cloud.google.com/recaptcha-enterprise/
-[cloud-recaptcha-ref]: https://cloud.google.com/go/recaptchaenterprise/apiv1beta1
+[cloud-recaptcha-ref]: https://github.com/weathersource/google-cloud-go/recaptchaenterprise/apiv1beta1
 
 [cloud-talent]: https://cloud.google.com/solutions/talent-solution/
-[cloud-talent-ref]: https://godoc.org/cloud.google.com/go/talent/apiv4beta1
+[cloud-talent-ref]: https://godoc.org/github.com/weathersource/google-cloud-go/talent/apiv4beta1

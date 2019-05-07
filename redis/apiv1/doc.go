@@ -31,7 +31,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package redis // import "cloud.google.com/go/redis/apiv1"
+package redis // import "github.com/weathersource/google-cloud-go/redis/apiv1"
 
 import (
 	"context"

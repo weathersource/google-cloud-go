@@ -21,9 +21,9 @@ import (
 	"strings"
 	"testing"
 
-	"cloud.google.com/go/internal/testutil"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/martian"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 )
 
 func TestLogger(t *testing.T) {

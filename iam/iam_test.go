@@ -19,7 +19,7 @@ import (
 	"sort"
 	"testing"
 
-	"cloud.google.com/go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 )
 
 func TestPolicy(t *testing.T) {

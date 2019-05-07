@@ -19,7 +19,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"cloud.google.com/go/internal/tracecontext"
+	"github.com/weathersource/google-cloud-go/internal/tracecontext"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

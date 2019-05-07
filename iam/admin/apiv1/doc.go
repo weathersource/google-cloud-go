@@ -33,7 +33,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package admin // import "cloud.google.com/go/iam/admin/apiv1"
+package admin // import "github.com/weathersource/google-cloud-go/iam/admin/apiv1"
 
 import (
 	"context"

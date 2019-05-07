@@ -31,7 +31,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package dataproc // import "cloud.google.com/go/dataproc/apiv1"
+package dataproc // import "github.com/weathersource/google-cloud-go/dataproc/apiv1"
 
 import (
 	"context"

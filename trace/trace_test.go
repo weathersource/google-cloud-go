@@ -28,9 +28,9 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/datastore"
-	"cloud.google.com/go/internal/testutil"
-	"cloud.google.com/go/storage"
+	"github.com/weathersource/google-cloud-go/datastore"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/storage"
 	api "google.golang.org/api/cloudtrace/v1"
 	compute "google.golang.org/api/compute/v1"
 	"google.golang.org/api/iterator"

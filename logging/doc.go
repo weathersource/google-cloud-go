@@ -15,7 +15,7 @@
 /*
 Package logging contains a Stackdriver Logging client suitable for writing logs.
 For reading logs, and working with sinks, metrics and monitored resources,
-see package cloud.google.com/go/logging/logadmin.
+see package github.com/weathersource/google-cloud-go/logging/logadmin.
 
 This client uses Logging API v2.
 See https://cloud.google.com/logging/docs/api/v2/ for an introduction to the API.
@@ -131,4 +131,4 @@ You should observe the child log entries grouped under the parent on the console
 parent entry will not inherit the severity of its children; you must update the
 parent severity yourself.
 */
-package logging // import "cloud.google.com/go/logging"
+package logging // import "github.com/weathersource/google-cloud-go/logging"

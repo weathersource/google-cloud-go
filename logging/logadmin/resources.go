@@ -17,7 +17,7 @@ package logadmin
 import (
 	"context"
 
-	vkit "cloud.google.com/go/logging/apiv2"
+	vkit "github.com/weathersource/google-cloud-go/logging/apiv2"
 	"google.golang.org/api/iterator"
 	mrpb "google.golang.org/genproto/googleapis/api/monitoredres"
 	logpb "google.golang.org/genproto/googleapis/logging/v2"

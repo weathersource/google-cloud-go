@@ -27,9 +27,9 @@ import (
 	"sync"
 	"testing"
 
-	"cloud.google.com/go/cmd/go-cloud-debug-agent/internal/debug"
-	"cloud.google.com/go/cmd/go-cloud-debug-agent/internal/debug/local"
-	"cloud.google.com/go/cmd/go-cloud-debug-agent/internal/debug/remote"
+	"github.com/weathersource/google-cloud-go/cmd/go-cloud-debug-agent/internal/debug"
+	"github.com/weathersource/google-cloud-go/cmd/go-cloud-debug-agent/internal/debug/local"
+	"github.com/weathersource/google-cloud-go/cmd/go-cloud-debug-agent/internal/debug/remote"
 )
 
 var expectedVarValues = map[string]interface{}{
@@ -351,8 +351,8 @@ func matches(p, s string) bool {
 }
 
 const (
-	proxySrc  = "cloud.google.com/go/cmd/go-cloud-debug-agent/internal/debug/cmd/debugproxy"
-	traceeSrc = "cloud.google.com/go/cmd/go-cloud-debug-agent/internal/debug/tests/peek/testdata"
+	proxySrc  = "github.com/weathersource/google-cloud-go/cmd/go-cloud-debug-agent/internal/debug/cmd/debugproxy"
+	traceeSrc = "github.com/weathersource/google-cloud-go/cmd/go-cloud-debug-agent/internal/debug/tests/peek/testdata"
 )
 
 var (

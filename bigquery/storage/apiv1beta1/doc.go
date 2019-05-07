@@ -30,7 +30,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package storage // import "cloud.google.com/go/bigquery/storage/apiv1beta1"
+package storage // import "github.com/weathersource/google-cloud-go/bigquery/storage/apiv1beta1"
 
 import (
 	"context"

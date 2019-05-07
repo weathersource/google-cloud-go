@@ -18,8 +18,8 @@ package protostruct
 import (
 	"testing"
 
-	"cloud.google.com/go/internal/testutil"
 	pb "github.com/golang/protobuf/ptypes/struct"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 )
 
 func TestDecodeToMap(t *testing.T) {

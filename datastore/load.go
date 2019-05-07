@@ -20,7 +20,7 @@ import (
 	"strings"
 	"time"
 
-	"cloud.google.com/go/internal/fields"
+	"github.com/weathersource/google-cloud-go/internal/fields"
 	pb "google.golang.org/genproto/googleapis/datastore/v1"
 )
 

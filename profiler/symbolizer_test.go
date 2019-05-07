@@ -18,9 +18,9 @@ import (
 	"bytes"
 	"testing"
 
-	"cloud.google.com/go/internal/testutil"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/pprof/profile"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 )
 
 type fakeFunc struct {

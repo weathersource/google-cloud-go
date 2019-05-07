@@ -17,7 +17,7 @@ package vision
 import (
 	"testing"
 
-	"cloud.google.com/go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	pb "google.golang.org/genproto/googleapis/cloud/vision/v1"
 )
 

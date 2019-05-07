@@ -32,8 +32,8 @@
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
 //
-// Use the client at cloud.google.com/go/spanner in preference to this.
-package spanner // import "cloud.google.com/go/spanner/apiv1"
+// Use the client at github.com/weathersource/google-cloud-go/spanner in preference to this.
+package spanner // import "github.com/weathersource/google-cloud-go/spanner/apiv1"
 
 import (
 	"context"

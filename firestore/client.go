@@ -23,11 +23,11 @@ import (
 	"strings"
 	"time"
 
-	vkit "cloud.google.com/go/firestore/apiv1"
-	"cloud.google.com/go/internal/trace"
-	"cloud.google.com/go/internal/version"
 	"github.com/golang/protobuf/ptypes"
 	gax "github.com/googleapis/gax-go/v2"
+	vkit "github.com/weathersource/google-cloud-go/firestore/apiv1"
+	"github.com/weathersource/google-cloud-go/internal/trace"
+	"github.com/weathersource/google-cloud-go/internal/version"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"
 	"google.golang.org/api/transport"
@@ -174,7 +174,7 @@ func (c *Client) idsToRef(IDs []string, dbPath string) (*CollectionRef, *Documen
 //
 // If a document is not present, the corresponding DocumentSnapshot's Exists method will return false.
 func (c *Client) GetAll(ctx context.Context, docRefs []*DocumentRef) (_ []*DocumentSnapshot, err error) {
-	ctx = trace.StartSpan(ctx, "cloud.google.com/go/firestore.GetAll")
+	ctx = trace.StartSpan(ctx, "github.com/weathersource/google-cloud-go/firestore.GetAll")
 	defer func() { trace.EndSpan(ctx, err) }()
 
 	return c.getAll(ctx, docRefs, nil)

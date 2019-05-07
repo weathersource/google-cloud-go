@@ -27,9 +27,9 @@ import (
 	"sync"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
 	emptypb "github.com/golang/protobuf/ptypes/empty"
 	tspb "github.com/golang/protobuf/ptypes/timestamp"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	lpb "google.golang.org/genproto/googleapis/api/label"
 	mrpb "google.golang.org/genproto/googleapis/api/monitoredres"
 	logpb "google.golang.org/genproto/googleapis/logging/v2"

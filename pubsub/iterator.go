@@ -20,9 +20,9 @@ import (
 	"sync"
 	"time"
 
-	vkit "cloud.google.com/go/pubsub/apiv1"
-	"cloud.google.com/go/pubsub/internal/distribution"
 	gax "github.com/googleapis/gax-go/v2"
+	vkit "github.com/weathersource/google-cloud-go/pubsub/apiv1"
+	"github.com/weathersource/google-cloud-go/pubsub/internal/distribution"
 	pb "google.golang.org/genproto/googleapis/pubsub/v1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

@@ -30,8 +30,8 @@ import (
 	"os"
 	"os/signal"
 
-	"cloud.google.com/go/httpreplay/internal/proxy"
 	"github.com/google/martian/martianhttp"
+	"github.com/weathersource/google-cloud-go/httpreplay/internal/proxy"
 )
 
 var (

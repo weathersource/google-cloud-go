@@ -36,8 +36,8 @@
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
 //
-// Use the client at cloud.google.com/go/trace in preference to this.
-package trace // import "cloud.google.com/go/trace/apiv1"
+// Use the client at github.com/weathersource/google-cloud-go/trace in preference to this.
+package trace // import "github.com/weathersource/google-cloud-go/trace/apiv1"
 
 import (
 	"context"

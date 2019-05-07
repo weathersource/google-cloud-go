@@ -15,7 +15,7 @@ go version
 
 # Set $GOPATH
 export GOPATH="$HOME/go"
-export GOCLOUD_HOME=$GOPATH/src/cloud.google.com/go/
+export GOCLOUD_HOME=$GOPATH/src/github.com/weathersource/google-cloud-go/
 export PATH="$GOPATH/bin:$PATH"
 
 # Move code into $GOPATH and get dependencies

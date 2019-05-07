@@ -22,9 +22,9 @@ import (
 	"sort"
 	"testing"
 
-	"cloud.google.com/go/internal/testutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	pb "google.golang.org/genproto/googleapis/datastore/v1"
 	"google.golang.org/grpc"
 )

@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
-	"cloud.google.com/go/longrunning"
-	lroauto "cloud.google.com/go/longrunning/autogen"
 	gax "github.com/googleapis/gax-go/v2"
+	"github.com/weathersource/google-cloud-go/longrunning"
+	lroauto "github.com/weathersource/google-cloud-go/longrunning/autogen"
 	"google.golang.org/api/option"
 	"google.golang.org/api/transport"
 	assetpb "google.golang.org/genproto/googleapis/cloud/asset/v1"

@@ -32,8 +32,8 @@
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
 //
-// Use the client at cloud.google.com/go/logging in preference to this.
-package logging // import "cloud.google.com/go/logging/apiv2"
+// Use the client at github.com/weathersource/google-cloud-go/logging in preference to this.
+package logging // import "github.com/weathersource/google-cloud-go/logging/apiv2"
 
 import (
 	"context"

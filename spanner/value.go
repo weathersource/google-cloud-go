@@ -24,10 +24,10 @@ import (
 	"strconv"
 	"time"
 
-	"cloud.google.com/go/civil"
-	"cloud.google.com/go/internal/fields"
 	proto "github.com/golang/protobuf/proto"
 	proto3 "github.com/golang/protobuf/ptypes/struct"
+	"github.com/weathersource/google-cloud-go/civil"
+	"github.com/weathersource/google-cloud-go/internal/fields"
 	sppb "google.golang.org/genproto/googleapis/spanner/v1"
 	"google.golang.org/grpc/codes"
 )

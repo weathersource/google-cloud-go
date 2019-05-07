@@ -31,7 +31,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package expr // import "cloud.google.com/go/expr/apiv1alpha1"
+package expr // import "github.com/weathersource/google-cloud-go/expr/apiv1alpha1"
 
 import (
 	"context"

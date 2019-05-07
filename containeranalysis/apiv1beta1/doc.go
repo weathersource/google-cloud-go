@@ -33,7 +33,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package containeranalysis // import "cloud.google.com/go/containeranalysis/apiv1beta1"
+package containeranalysis // import "github.com/weathersource/google-cloud-go/containeranalysis/apiv1beta1"
 
 import (
 	"context"

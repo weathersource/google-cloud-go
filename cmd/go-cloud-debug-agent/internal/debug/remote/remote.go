@@ -22,8 +22,8 @@ import (
 	"os"
 	"os/exec"
 
-	"cloud.google.com/go/cmd/go-cloud-debug-agent/internal/debug"
-	"cloud.google.com/go/cmd/go-cloud-debug-agent/internal/debug/server/protocol"
+	"github.com/weathersource/google-cloud-go/cmd/go-cloud-debug-agent/internal/debug"
+	"github.com/weathersource/google-cloud-go/cmd/go-cloud-debug-agent/internal/debug/server/protocol"
 )
 
 var _ debug.Program = (*Program)(nil)

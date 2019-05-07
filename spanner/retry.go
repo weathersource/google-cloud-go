@@ -22,10 +22,10 @@ import (
 	"strings"
 	"time"
 
-	"cloud.google.com/go/internal/trace"
-	"cloud.google.com/go/spanner/internal/backoff"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
+	"github.com/weathersource/google-cloud-go/internal/trace"
+	"github.com/weathersource/google-cloud-go/spanner/internal/backoff"
 	edpb "google.golang.org/genproto/googleapis/rpc/errdetails"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/metadata"

@@ -18,9 +18,9 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/bigtable"
-	"cloud.google.com/go/internal/testutil"
 	"github.com/google/go-cmp/cmp"
+	"github.com/weathersource/google-cloud-go/bigtable"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 )
 
 func TestParseDuration(t *testing.T) {

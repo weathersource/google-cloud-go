@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
-	"cloud.google.com/go/internal/uid"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/internal/uid"
 	"google.golang.org/api/iterator"
 )
 

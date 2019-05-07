@@ -31,7 +31,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package scheduler // import "cloud.google.com/go/scheduler/apiv1beta1"
+package scheduler // import "github.com/weathersource/google-cloud-go/scheduler/apiv1beta1"
 
 import (
 	"context"

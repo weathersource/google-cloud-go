@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
 	"github.com/golang/protobuf/ptypes"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	pb "google.golang.org/genproto/googleapis/pubsub/v1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

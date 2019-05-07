@@ -164,7 +164,7 @@ Once you've done the necessary setup, you can run the integration tests by
 running:
 
 ``` sh
-$ go test -v cloud.google.com/go/...
+$ go test -v github.com/weathersource/google-cloud-go/...
 ```
 
 #### Replay

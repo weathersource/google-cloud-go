@@ -17,7 +17,7 @@
 // This package is still experimental and subject to change.
 //
 // See https://cloud.google.com/error-reporting/ for more information.
-package errorreporting // import "cloud.google.com/go/errorreporting"
+package errorreporting // import "github.com/weathersource/google-cloud-go/errorreporting"
 
 import (
 	"bytes"
@@ -28,10 +28,10 @@ import (
 	"runtime"
 	"time"
 
-	vkit "cloud.google.com/go/errorreporting/apiv1beta1"
-	"cloud.google.com/go/internal/version"
 	"github.com/golang/protobuf/ptypes"
 	gax "github.com/googleapis/gax-go/v2"
+	vkit "github.com/weathersource/google-cloud-go/errorreporting/apiv1beta1"
+	"github.com/weathersource/google-cloud-go/internal/version"
 	"google.golang.org/api/option"
 	"google.golang.org/api/support/bundler"
 	pb "google.golang.org/genproto/googleapis/devtools/clouderrorreporting/v1beta1"
@@ -199,7 +199,7 @@ func (c *Client) newRequest(e Entry) *pb.ReportErrorEventRequest {
 // chopStack trims a stack trace so that the function which panics or calls
 // Report is first.
 func chopStack(s []byte) string {
-	f := []byte("cloud.google.com/go/errorreporting.(*Client).Report")
+	f := []byte("github.com/weathersource/google-cloud-go/errorreporting.(*Client).Report")
 
 	lfFirst := bytes.IndexByte(s, '\n')
 	if lfFirst == -1 {

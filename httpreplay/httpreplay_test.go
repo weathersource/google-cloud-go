@@ -27,9 +27,9 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/httpreplay"
-	"cloud.google.com/go/internal/testutil"
-	"cloud.google.com/go/storage"
+	"github.com/weathersource/google-cloud-go/httpreplay"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/storage"
 	"google.golang.org/api/option"
 )
 

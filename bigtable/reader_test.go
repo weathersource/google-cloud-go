@@ -23,9 +23,9 @@ import (
 	"strings"
 	"testing"
 
-	"cloud.google.com/go/internal/testutil"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/wrappers"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	btspb "google.golang.org/genproto/googleapis/bigtable/v2"
 )
 

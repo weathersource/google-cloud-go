@@ -32,7 +32,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package dialogflow // import "cloud.google.com/go/dialogflow/apiv2"
+package dialogflow // import "github.com/weathersource/google-cloud-go/dialogflow/apiv2"
 
 import (
 	"context"

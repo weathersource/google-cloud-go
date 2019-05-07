@@ -32,7 +32,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package texttospeech // import "cloud.google.com/go/texttospeech/apiv1"
+package texttospeech // import "github.com/weathersource/google-cloud-go/texttospeech/apiv1"
 
 import (
 	"context"

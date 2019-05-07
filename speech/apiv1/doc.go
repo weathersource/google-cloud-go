@@ -30,7 +30,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package speech // import "cloud.google.com/go/speech/apiv1"
+package speech // import "github.com/weathersource/google-cloud-go/speech/apiv1"
 
 import (
 	"context"

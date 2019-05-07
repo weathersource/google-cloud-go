@@ -19,8 +19,8 @@ import (
 	"io"
 	"testing"
 
-	"cloud.google.com/go/profiler/testdata"
 	"github.com/google/pprof/profile"
+	"github.com/weathersource/google-cloud-go/profiler/testdata"
 )
 
 func TestGoHeapProfile(t *testing.T) {

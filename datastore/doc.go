@@ -494,4 +494,4 @@ directed to the emulator instead of the production Datastore service.
 To install and set up the emulator and its environment variables, see the documentation
 at https://cloud.google.com/datastore/docs/tools/datastore-emulator.
 */
-package datastore // import "cloud.google.com/go/datastore"
+package datastore // import "github.com/weathersource/google-cloud-go/datastore"

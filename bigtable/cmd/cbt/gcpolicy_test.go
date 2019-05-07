@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/bigtable"
 	"github.com/google/go-cmp/cmp"
+	"github.com/weathersource/google-cloud-go/bigtable"
 )
 
 func TestParseGCPolicy(t *testing.T) {

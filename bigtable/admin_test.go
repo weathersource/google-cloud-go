@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
 	"github.com/golang/protobuf/proto"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	"google.golang.org/api/iterator"
 	btapb "google.golang.org/genproto/googleapis/bigtable/admin/v2"
 )

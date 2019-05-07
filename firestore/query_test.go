@@ -20,9 +20,9 @@ import (
 	"sort"
 	"testing"
 
-	"cloud.google.com/go/internal/pretty"
 	tspb "github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/golang/protobuf/ptypes/wrappers"
+	"github.com/weathersource/google-cloud-go/internal/pretty"
 	pb "google.golang.org/genproto/googleapis/firestore/v1"
 )
 

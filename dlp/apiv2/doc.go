@@ -32,7 +32,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package dlp // import "cloud.google.com/go/dlp/apiv2"
+package dlp // import "github.com/weathersource/google-cloud-go/dlp/apiv2"
 
 import (
 	"context"

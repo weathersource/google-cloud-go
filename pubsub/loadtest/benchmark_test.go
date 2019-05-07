@@ -26,8 +26,8 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
-	"cloud.google.com/go/pubsub"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/pubsub"
 	"google.golang.org/api/option"
 	gtransport "google.golang.org/api/transport/grpc"
 	pb "google.golang.org/genproto/googleapis/pubsub/v1"

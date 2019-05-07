@@ -18,9 +18,9 @@ import (
 	"context"
 	"fmt"
 
-	"cloud.google.com/go/internal"
-	"cloud.google.com/go/internal/version"
 	gax "github.com/googleapis/gax-go/v2"
+	"github.com/weathersource/google-cloud-go/internal"
+	"github.com/weathersource/google-cloud-go/internal/version"
 	pb "google.golang.org/genproto/googleapis/datastore/v1"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"

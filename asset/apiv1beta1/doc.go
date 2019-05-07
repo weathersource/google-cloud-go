@@ -31,7 +31,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package asset // import "cloud.google.com/go/asset/apiv1beta1"
+package asset // import "github.com/weathersource/google-cloud-go/asset/apiv1beta1"
 
 import (
 	"context"

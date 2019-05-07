@@ -31,8 +31,8 @@
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
 //
-// Use the client at cloud.google.com/go/longrunning in preference to this.
-package longrunning // import "cloud.google.com/go/longrunning/autogen"
+// Use the client at github.com/weathersource/google-cloud-go/longrunning in preference to this.
+package longrunning // import "github.com/weathersource/google-cloud-go/longrunning/autogen"
 
 import (
 	"context"

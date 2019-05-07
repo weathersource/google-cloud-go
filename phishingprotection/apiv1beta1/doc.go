@@ -30,7 +30,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package phishingprotection // import "cloud.google.com/go/phishingprotection/apiv1beta1"
+package phishingprotection // import "github.com/weathersource/google-cloud-go/phishingprotection/apiv1beta1"
 
 import (
 	"context"

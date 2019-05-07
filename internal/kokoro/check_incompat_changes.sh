@@ -25,7 +25,7 @@ STABLE_GAPICS="container/apiv1 dataproc/apiv1 iam iam/admin/apiv1 iam/credential
 for dir in $MANUALS $STABLE_GAPICS; do
   # turns things like ./foo/bar into foo/bar
   dir_without_junk=`echo $dir | sed -n "s#\(\.\/\)\(.*\)#\2#p"`
-  pkg="cloud.google.com/go/$dir_without_junk"
+  pkg="github.com/weathersource/google-cloud-go/$dir_without_junk"
   echo "Testing $pkg"
 
   cd /tmp/gocloud

@@ -29,11 +29,11 @@ import (
 	"testing"
 	"time"
 
-	pb "cloud.google.com/go/firestore/genproto"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	ts "github.com/golang/protobuf/ptypes/timestamp"
 	"github.com/google/go-cmp/cmp"
+	pb "github.com/weathersource/google-cloud-go/firestore/genproto"
 	"google.golang.org/api/iterator"
 	fspb "google.golang.org/genproto/googleapis/firestore/v1"
 )

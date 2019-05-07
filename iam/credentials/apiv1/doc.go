@@ -31,7 +31,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package credentials // import "cloud.google.com/go/iam/credentials/apiv1"
+package credentials // import "github.com/weathersource/google-cloud-go/iam/credentials/apiv1"
 
 import (
 	"context"

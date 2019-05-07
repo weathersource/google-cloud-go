@@ -20,7 +20,7 @@ import (
 	"log"
 	"time"
 
-	"cloud.google.com/go/datastore"
+	"github.com/weathersource/google-cloud-go/datastore"
 	"google.golang.org/api/iterator"
 )
 

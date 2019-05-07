@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"
 )

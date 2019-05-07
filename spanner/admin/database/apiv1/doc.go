@@ -30,7 +30,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package database // import "cloud.google.com/go/spanner/admin/database/apiv1"
+package database // import "github.com/weathersource/google-cloud-go/spanner/admin/database/apiv1"
 
 import (
 	"context"

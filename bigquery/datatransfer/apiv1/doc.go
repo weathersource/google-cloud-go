@@ -32,7 +32,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package datatransfer // import "cloud.google.com/go/bigquery/datatransfer/apiv1"
+package datatransfer // import "github.com/weathersource/google-cloud-go/bigquery/datatransfer/apiv1"
 
 import (
 	"context"

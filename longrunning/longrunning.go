@@ -19,7 +19,7 @@
 // Instead they will call functions returning Operations and call their methods.
 //
 // This package is still experimental and subject to change.
-package longrunning // import "cloud.google.com/go/longrunning"
+package longrunning // import "github.com/weathersource/google-cloud-go/longrunning"
 
 import (
 	"context"
@@ -27,10 +27,10 @@ import (
 	"fmt"
 	"time"
 
-	autogen "cloud.google.com/go/longrunning/autogen"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes"
 	gax "github.com/googleapis/gax-go/v2"
+	autogen "github.com/weathersource/google-cloud-go/longrunning/autogen"
 	pb "google.golang.org/genproto/googleapis/longrunning"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

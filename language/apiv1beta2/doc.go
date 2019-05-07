@@ -33,7 +33,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package language // import "cloud.google.com/go/language/apiv1beta2"
+package language // import "github.com/weathersource/google-cloud-go/language/apiv1beta2"
 
 import (
 	"context"

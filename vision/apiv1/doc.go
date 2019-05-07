@@ -32,7 +32,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package vision // import "cloud.google.com/go/vision/apiv1"
+package vision // import "github.com/weathersource/google-cloud-go/vision/apiv1"
 
 import (
 	"context"

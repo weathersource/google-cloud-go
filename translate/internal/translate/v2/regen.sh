@@ -5,7 +5,7 @@
 
 $GOPATH/bin/google-api-go-generator \
 	-api_json_file translate-nov2016-api.json \
-	-api_pkg_base cloud.google.com/go/translate/internal \
+	-api_pkg_base github.com/weathersource/google-cloud-go/translate/internal \
 	-output translate-nov2016-gen.nolicense
 
 cat - translate-nov2016-gen.nolicense > translate-nov2016-gen.go <<EOF

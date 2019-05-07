@@ -17,7 +17,7 @@ package kms_test
 import (
 	"context"
 
-	kms "cloud.google.com/go/kms/apiv1"
+	kms "github.com/weathersource/google-cloud-go/kms/apiv1"
 )
 
 func ExampleKeyManagementClient_ResourceIAM() {

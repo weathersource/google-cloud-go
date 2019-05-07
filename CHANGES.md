@@ -250,7 +250,7 @@ hard-to-reproduce Pub/Sub issues.
 
 ## v0.30.0
 
-- spanner: DML support added. See https://godoc.org/cloud.google.com/go/spanner#hdr-DML_and_Partitioned_DML for more information.
+- spanner: DML support added. See https://godoc.org/github.com/weathersource/google-cloud-go/spanner#hdr-DML_and_Partitioned_DML for more information.
 - bigtable: bttest supports row sample filter.
 - functions: metadata package added for accessing Cloud Functions resource metadata.
 
@@ -291,7 +291,7 @@ hard-to-reproduce Pub/Sub issues.
 - firestore:
   - BREAKING CHANGE: When watching a query with Query.Snapshots, QuerySnapshotIterator.Next
   returns a QuerySnapshot which contains read time, result size, change list and the DocumentIterator
-  (previously, QuerySnapshotIterator.Next returned just the DocumentIterator). See: https://godoc.org/cloud.google.com/go/firestore#Query.Snapshots.
+  (previously, QuerySnapshotIterator.Next returned just the DocumentIterator). See: https://godoc.org/github.com/weathersource/google-cloud-go/firestore#Query.Snapshots.
   - Add array-contains operator.
 - IAM:
   - Add iam/credentials/apiv1 client.
@@ -317,14 +317,14 @@ hard-to-reproduce Pub/Sub issues.
 - spanner:
   - Fix a case where an iterator might not be closed correctly.
 - storage:
-  - Add ServiceAccount method https://godoc.org/cloud.google.com/go/storage#Client.ServiceAccount.
+  - Add ServiceAccount method https://godoc.org/github.com/weathersource/google-cloud-go/storage#Client.ServiceAccount.
   - Add a method to Reader that returns the parsed value of the Last-Modified header.
 
 ## v0.26.0
 
 - bigquery:
   - Support filtering listed jobs  by min/max creation time.
-  - Support data clustering (https://godoc.org/cloud.google.com/go/bigquery#Clustering).
+  - Support data clustering (https://godoc.org/github.com/weathersource/google-cloud-go/bigquery#Clustering).
   - Include job creator email in Job struct.
 - bigtable:
   - Add `RowSampleFilter`.
@@ -702,8 +702,8 @@ hard-to-reproduce Pub/Sub issues.
 
 - pubsub: Subscription.Receive now runs concurrently for higher throughput.
 
-- vision: cloud.google.com/go/vision is deprecated. Use
-cloud.google.com/go/vision/apiv1 instead.
+- vision: github.com/weathersource/google-cloud-go/vision is deprecated. Use
+github.com/weathersource/google-cloud-go/vision/apiv1 instead.
 
 - translation: now stable.
 
@@ -824,7 +824,7 @@ for details.
 
 - bigquery:
   - The SQL types DATE, TIME and DATETIME are now supported. They correspond to
-    the `Date`, `Time` and `DateTime` types in the new `cloud.google.com/go/civil`
+    the `Date`, `Time` and `DateTime` types in the new `github.com/weathersource/google-cloud-go/civil`
     package.
   - Support for query parameters.
   - Support deleting a dataset.
@@ -1186,8 +1186,8 @@ more details.
 Natural Language.
 
 - Preview version of a new [Stackdriver Logging][cloud-logging] client in
-[`cloud.google.com/go/preview/logging`](https://godoc.org/cloud.google.com/go/preview/logging).
+[`github.com/weathersource/google-cloud-go/preview/logging`](https://godoc.org/github.com/weathersource/google-cloud-go/preview/logging).
 This client uses gRPC as its transport layer, and supports log reading, sinks
-and metrics. It will replace the current client at `cloud.google.com/go/logging` shortly.
+and metrics. It will replace the current client at `github.com/weathersource/google-cloud-go/logging` shortly.
 
 

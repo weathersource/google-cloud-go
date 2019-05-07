@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
 	"github.com/google/go-cmp/cmp"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	"google.golang.org/api/option"
 	btpb "google.golang.org/genproto/googleapis/bigtable/v2"
 	"google.golang.org/grpc"

@@ -32,7 +32,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package talent // import "cloud.google.com/go/talent/apiv4beta1"
+package talent // import "github.com/weathersource/google-cloud-go/talent/apiv4beta1"
 
 import (
 	"context"

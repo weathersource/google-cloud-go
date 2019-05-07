@@ -31,7 +31,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package cloudtasks // import "cloud.google.com/go/cloudtasks/apiv2beta3"
+package cloudtasks // import "github.com/weathersource/google-cloud-go/cloudtasks/apiv2beta3"
 
 import (
 	"context"

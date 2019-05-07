@@ -23,9 +23,9 @@ import (
 	"sync"
 	"time"
 
-	"cloud.google.com/go/iam"
 	"github.com/golang/protobuf/proto"
 	gax "github.com/googleapis/gax-go/v2"
+	"github.com/weathersource/google-cloud-go/iam"
 	"google.golang.org/api/support/bundler"
 	pb "google.golang.org/genproto/googleapis/pubsub/v1"
 	fmpb "google.golang.org/genproto/protobuf/field_mask"

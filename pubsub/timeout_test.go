@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/pubsub/pstest"
+	"github.com/weathersource/google-cloud-go/pubsub/pstest"
 	"google.golang.org/api/option"
 	"google.golang.org/grpc"
 )

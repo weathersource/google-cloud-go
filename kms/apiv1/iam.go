@@ -15,7 +15,7 @@
 package kms
 
 import (
-	"cloud.google.com/go/iam"
+	"github.com/weathersource/google-cloud-go/iam"
 	kmspb "google.golang.org/genproto/googleapis/cloud/kms/v1"
 )
 

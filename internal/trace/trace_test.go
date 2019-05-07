@@ -19,7 +19,7 @@ import (
 	"net/http"
 	"testing"
 
-	"cloud.google.com/go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	octrace "go.opencensus.io/trace"
 	"google.golang.org/api/googleapi"
 	"google.golang.org/genproto/googleapis/rpc/code"

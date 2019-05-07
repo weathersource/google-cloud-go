@@ -17,13 +17,13 @@
 
 // Package logadmin contains a Stackdriver Logging client that can be used
 // for reading logs and working with sinks, metrics and monitored resources.
-// For a client that can write logs, see package cloud.google.com/go/logging.
+// For a client that can write logs, see package github.com/weathersource/google-cloud-go/logging.
 //
 // The client uses Logging API v2.
 // See https://cloud.google.com/logging/docs/api/v2/ for an introduction to the API.
 //
 // Note: This package is in beta.  Some backwards-incompatible changes may occur.
-package logadmin // import "cloud.google.com/go/logging/logadmin"
+package logadmin // import "github.com/weathersource/google-cloud-go/logging/logadmin"
 
 import (
 	"context"
@@ -33,12 +33,12 @@ import (
 	"strings"
 	"time"
 
-	"cloud.google.com/go/internal/version"
-	"cloud.google.com/go/logging"
-	vkit "cloud.google.com/go/logging/apiv2"
-	"cloud.google.com/go/logging/internal"
 	"github.com/golang/protobuf/ptypes"
 	gax "github.com/googleapis/gax-go/v2"
+	"github.com/weathersource/google-cloud-go/internal/version"
+	"github.com/weathersource/google-cloud-go/logging"
+	vkit "github.com/weathersource/google-cloud-go/logging/apiv2"
+	"github.com/weathersource/google-cloud-go/logging/internal"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"
 	_ "google.golang.org/genproto/googleapis/appengine/logging/v1" // Import the following so EntryIterator can unmarshal log protos.

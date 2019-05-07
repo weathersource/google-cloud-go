@@ -32,8 +32,8 @@
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
 //
-// Use the client at cloud.google.com/go/pubsub in preference to this.
-package pubsub // import "cloud.google.com/go/pubsub/apiv1"
+// Use the client at github.com/weathersource/google-cloud-go/pubsub in preference to this.
+package pubsub // import "github.com/weathersource/google-cloud-go/pubsub/apiv1"
 
 import (
 	"context"

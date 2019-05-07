@@ -32,7 +32,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package iot // import "cloud.google.com/go/iot/apiv1"
+package iot // import "github.com/weathersource/google-cloud-go/iot/apiv1"
 
 import (
 	"context"

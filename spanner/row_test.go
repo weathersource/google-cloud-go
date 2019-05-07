@@ -24,9 +24,9 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/civil"
 	proto "github.com/golang/protobuf/proto"
 	proto3 "github.com/golang/protobuf/ptypes/struct"
+	"github.com/weathersource/google-cloud-go/civil"
 	sppb "google.golang.org/genproto/googleapis/spanner/v1"
 )
 

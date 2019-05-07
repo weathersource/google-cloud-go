@@ -33,7 +33,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package monitoring // import "cloud.google.com/go/monitoring/apiv3"
+package monitoring // import "github.com/weathersource/google-cloud-go/monitoring/apiv3"
 
 import (
 	"context"

@@ -23,10 +23,10 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
 	"github.com/golang/protobuf/proto"
 	durpb "github.com/golang/protobuf/ptypes/duration"
 	structpb "github.com/golang/protobuf/ptypes/struct"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	"google.golang.org/api/logging/v2"
 	"google.golang.org/api/support/bundler"
 	mrpb "google.golang.org/genproto/googleapis/api/monitoredres"

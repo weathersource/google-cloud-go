@@ -30,7 +30,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package irm // import "cloud.google.com/go/irm/apiv1alpha2"
+package irm // import "github.com/weathersource/google-cloud-go/irm/apiv1alpha2"
 
 import (
 	"context"

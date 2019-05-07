@@ -5,7 +5,7 @@ specifically for Google APIs that use HTTP exclusively. These include the Google
 Cloud Storage and BigQuery clients, as well as the clients in the
 `github.com/google/google-api-*-client` repos.
 
-If you are writing Go code, you should use the `cloud.google.com/go/httpreplay` package, which
+If you are writing Go code, you should use the `github.com/weathersource/google-cloud-go/httpreplay` package, which
 is a simpler way to use the proxy.
 
 ## Using a Record/Replay Proxy
@@ -18,7 +18,7 @@ turning the integration test into a fast and inexpensive unit test.
 ## Usage
 
 First, obtain the `httpr` binary. If you have the Go toolchain, you can run `go
-get -u cloud.google.com/go/httpreplay/cmd/httpr`. Otherwise, precompiled
+get -u github.com/weathersource/google-cloud-go/httpreplay/cmd/httpr`. Otherwise, precompiled
 binaries for various architectures and operating systems are available from [the
 releases page](https://github.com/googleapis/google-cloud-go/releases).
 

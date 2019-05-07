@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"cloud.google.com/go/profiler"
+	"github.com/weathersource/google-cloud-go/profiler"
 )
 
 var (

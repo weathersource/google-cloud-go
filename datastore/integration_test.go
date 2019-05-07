@@ -29,8 +29,8 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
-	"cloud.google.com/go/rpcreplay"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/rpcreplay"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"
 	"google.golang.org/grpc"

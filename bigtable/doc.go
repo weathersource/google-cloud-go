@@ -97,7 +97,7 @@ response, an unretryable error or the context deadline is reached. Non-idempoten
 the timestamp is set to ServerTime) will not be retried. In the case of ReadRows, retried calls
 will not re-scan rows that have already been processed.
 */
-package bigtable // import "cloud.google.com/go/bigtable"
+package bigtable // import "github.com/weathersource/google-cloud-go/bigtable"
 
 // Scope constants for authentication credentials.
 // These should be used when using credential creation functions such as oauth.NewServiceAccountFromFile.

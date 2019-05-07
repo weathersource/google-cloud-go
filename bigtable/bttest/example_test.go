@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"log"
 
-	"cloud.google.com/go/bigtable"
-	"cloud.google.com/go/bigtable/bttest"
+	"github.com/weathersource/google-cloud-go/bigtable"
+	"github.com/weathersource/google-cloud-go/bigtable/bttest"
 	"google.golang.org/api/option"
 	"google.golang.org/grpc"
 )

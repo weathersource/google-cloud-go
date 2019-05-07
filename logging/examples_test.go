@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"cloud.google.com/go/logging"
+	"github.com/weathersource/google-cloud-go/logging"
 	"go.opencensus.io/trace"
 )
 

@@ -36,8 +36,8 @@ import (
 	"text/template"
 	"time"
 
-	"cloud.google.com/go/bigtable"
-	"cloud.google.com/go/bigtable/internal/cbtconfig"
+	"github.com/weathersource/google-cloud-go/bigtable"
+	"github.com/weathersource/google-cloud-go/bigtable/internal/cbtconfig"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"
 	"google.golang.org/grpc"

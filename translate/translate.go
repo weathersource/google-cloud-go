@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"cloud.google.com/go/internal/version"
-	raw "cloud.google.com/go/translate/internal/translate/v2"
+	"github.com/weathersource/google-cloud-go/internal/version"
+	raw "github.com/weathersource/google-cloud-go/translate/internal/translate/v2"
 	"golang.org/x/text/language"
 	"google.golang.org/api/option"
 	htransport "google.golang.org/api/transport/http"

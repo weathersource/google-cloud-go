@@ -19,7 +19,7 @@ import (
 	"errors"
 	"fmt"
 
-	"cloud.google.com/go/internal/trace"
+	"github.com/weathersource/google-cloud-go/internal/trace"
 	raw "google.golang.org/api/storage/v1"
 )
 
@@ -74,7 +74,7 @@ type Copier struct {
 
 // Run performs the copy.
 func (c *Copier) Run(ctx context.Context) (attrs *ObjectAttrs, err error) {
-	ctx = trace.StartSpan(ctx, "cloud.google.com/go/storage.Copier.Run")
+	ctx = trace.StartSpan(ctx, "github.com/weathersource/google-cloud-go/storage.Copier.Run")
 	defer func() { trace.EndSpan(ctx, err) }()
 
 	if err := c.src.validate(); err != nil {
@@ -172,7 +172,7 @@ type Composer struct {
 
 // Run performs the compose operation.
 func (c *Composer) Run(ctx context.Context) (attrs *ObjectAttrs, err error) {
-	ctx = trace.StartSpan(ctx, "cloud.google.com/go/storage.Composer.Run")
+	ctx = trace.StartSpan(ctx, "github.com/weathersource/google-cloud-go/storage.Composer.Run")
 	defer func() { trace.EndSpan(ctx, err) }()
 
 	if err := c.dst.validate(); err != nil {

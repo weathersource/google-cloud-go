@@ -30,7 +30,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package recaptchaenterprise // import "cloud.google.com/go/recaptchaenterprise/apiv1beta1"
+package recaptchaenterprise // import "github.com/weathersource/google-cloud-go/recaptchaenterprise/apiv1beta1"
 
 import (
 	"context"

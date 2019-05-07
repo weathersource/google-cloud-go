@@ -18,7 +18,7 @@ import (
 	"testing"
 	"time"
 
-	"cloud.google.com/go/internal/testutil"
+	"github.com/weathersource/google-cloud-go/internal/testutil"
 	pb "google.golang.org/genproto/googleapis/datastore/v1"
 )
 

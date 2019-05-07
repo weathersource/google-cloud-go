@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"time"
 
-	"cloud.google.com/go/civil"
 	proto3 "github.com/golang/protobuf/ptypes/struct"
+	"github.com/weathersource/google-cloud-go/civil"
 	sppb "google.golang.org/genproto/googleapis/spanner/v1"
 	"google.golang.org/grpc/codes"
 )

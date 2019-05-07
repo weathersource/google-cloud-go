@@ -31,7 +31,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package kms // import "cloud.google.com/go/kms/apiv1"
+package kms // import "github.com/weathersource/google-cloud-go/kms/apiv1"
 
 import (
 	"context"

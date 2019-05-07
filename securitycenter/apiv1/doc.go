@@ -32,7 +32,7 @@
 //
 // For information about setting deadlines, reusing contexts, and more
 // please visit godoc.org/cloud.google.com/go.
-package securitycenter // import "cloud.google.com/go/securitycenter/apiv1"
+package securitycenter // import "github.com/weathersource/google-cloud-go/securitycenter/apiv1"
 
 import (
 	"context"
