@@ -14,22 +14,25 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-package bigtable // import "cloud.google.com/go/bigtable"
+package bigtable // import "github.com/weathersource/google-cloud-go/bigtable"
 
 import (
 	"context"
 	"errors"
 	"fmt"
 	"io"
+	"log"
 	"strconv"
 	"time"
 
-	"cloud.google.com/go/bigtable/internal/gax"
-	btopt "cloud.google.com/go/bigtable/internal/option"
-	"cloud.google.com/go/internal/trace"
 	"github.com/golang/protobuf/proto"
-	"google.golang.org/api/option"
 	gtransport "google.golang.org/api/transport/grpc"
+
+	// gtransport "github.com/weathersource/google-api-go-client/transport/grpc"
+	"github.com/weathersource/google-cloud-go/bigtable/internal/gax"
+	btopt "github.com/weathersource/google-cloud-go/bigtable/internal/option"
+	"github.com/weathersource/google-cloud-go/internal/trace"
+	"google.golang.org/api/option"
 	btpb "google.golang.org/genproto/googleapis/bigtable/v2"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
@@ -59,15 +62,18 @@ type ClientConfig struct {
 // NewClient creates a new Client for a given project and instance.
 // The default ClientConfig will be used.
 func NewClient(ctx context.Context, project, instance string, opts ...option.ClientOption) (*Client, error) {
+	log.Println("5a: Launching bigtable.NewClient().")
 	return NewClientWithConfig(ctx, project, instance, ClientConfig{}, opts...)
 }
 
 // NewClientWithConfig creates a new client with the given config.
 func NewClientWithConfig(ctx context.Context, project, instance string, config ClientConfig, opts ...option.ClientOption) (*Client, error) {
+	log.Println("5b: Launching bigtable.NewClientWithConfig().")
 	o, err := btopt.DefaultClientOptions(prodAddr, Scope, clientUserAgent)
 	if err != nil {
 		return nil, err
 	}
+	log.Println("5c: Acquired default client opts.")
 	// Default to a small connection pool that can be overridden.
 	o = append(o,
 		option.WithGRPCConnectionPool(4),
@@ -77,11 +83,15 @@ func NewClientWithConfig(ctx context.Context, project, instance string, config C
 		// can cause RPCs to fail randomly. We can delete this after the issue is fixed.
 		option.WithGRPCDialOption(grpc.WithBlock()))
 	o = append(o, opts...)
+	log.Printf("5d: Final options. %#v", o)
+	log.Println("5e: Preparing to dial connection.")
 	conn, err := gtransport.Dial(ctx, o...)
 	if err != nil {
 		return nil, fmt.Errorf("dialing: %v", err)
 	}
+	log.Println("5f: Success dialing connection.")
 
+	log.Println("5g: Returning bigtable.Client")
 	return &Client{
 		conn:       conn,
 		client:     btpb.NewBigtableClient(conn),
@@ -145,7 +155,7 @@ func (c *Client) Open(table string) *Table {
 // Use RowFilter to limit the cells returned.
 func (t *Table) ReadRows(ctx context.Context, arg RowSet, f func(Row) bool, opts ...ReadOption) (err error) {
 	ctx = mergeOutgoingMetadata(ctx, t.md)
-	ctx = trace.StartSpan(ctx, "cloud.google.com/go/bigtable.ReadRows")
+	ctx = trace.StartSpan(ctx, "github.com/weathersource/google-cloud-go/bigtable.ReadRows")
 	defer func() { trace.EndSpan(ctx, err) }()
 
 	var prevRowKey string
@@ -476,7 +486,7 @@ func (t *Table) Apply(ctx context.Context, row string, m *Mutation, opts ...Appl
 		}
 	}
 
-	ctx = trace.StartSpan(ctx, "cloud.google.com/go/bigtable/Apply")
+	ctx = trace.StartSpan(ctx, "github.com/weathersource/google-cloud-go/bigtable/Apply")
 	defer func() { trace.EndSpan(ctx, err) }()
 	var callOptions []gax.CallOption
 	if m.cond == nil {
@@ -642,7 +652,7 @@ type entryErr struct {
 // Conditional mutations cannot be applied in bulk and providing one will result in an error.
 func (t *Table) ApplyBulk(ctx context.Context, rowKeys []string, muts []*Mutation, opts ...ApplyOption) (errs []error, err error) {
 	ctx = mergeOutgoingMetadata(ctx, t.md)
-	ctx = trace.StartSpan(ctx, "cloud.google.com/go/bigtable/ApplyBulk")
+	ctx = trace.StartSpan(ctx, "github.com/weathersource/google-cloud-go/bigtable/ApplyBulk")
 	defer func() { trace.EndSpan(ctx, err) }()
 
 	if len(rowKeys) != len(muts) {
